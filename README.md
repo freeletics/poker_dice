@@ -1,6 +1,10 @@
 # PokerDice
 This is a skeleton library that will be used for pair/mob programming for the interview process.
 
+Wiki link for [Poker dice] (https://en.wikipedia.org/wiki/Poker_dice)
+
+Highly inspired by RubyConf LA 2018. Video [here](https://www.youtube.com/watch?v=bxNUCtz2svo)
+
 ## Installation
 
 Add this line to your application's Gemfile:
