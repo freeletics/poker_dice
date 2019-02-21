@@ -1,7 +1,8 @@
 # PokerDice
 This is a skeleton library that will be used for pair/mob programming for the interview process.
+Starting from this base, we start with making the skipped spec fail first, and start implementing those methods.
 
-Wiki link for [Poker dice] (https://en.wikipedia.org/wiki/Poker_dice)
+Wiki link for [Poker dice](https://en.wikipedia.org/wiki/Poker_dice)
 
 Highly inspired by RubyConf LA 2018. Video [here](https://www.youtube.com/watch?v=bxNUCtz2svo)
 
