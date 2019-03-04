@@ -2,11 +2,26 @@ class PokerDice::Hand
   attr_reader :dices
 
   def initialize(dices)
-    @dices = dices
+    @dices = dices.split(" ")
   end
 
+  def score
+    case
+    when one_pair?
+      "one_pair"
+    when two_pair?
+      "two_pair"
+    when three_of_a_kind?
+      "three_of_a_kind"
+    else
+      "bust"
+    end
+  end
+
+  private
+
   def bust?
-    !one_pair? && !two_pair?
+    !one_pair? && !two_pair? && !three_of_a_kind?
   end
 
   def one_pair?
@@ -21,11 +36,9 @@ class PokerDice::Hand
     triple_count == 1
   end
 
-  private
-
   def dice_counts
     @dice_counts ||= Hash.new(0).tap do |result|
-      dices.split(" ").each do |die|
+      dices.each do |die|
         result[die] += 1
       end
     end
